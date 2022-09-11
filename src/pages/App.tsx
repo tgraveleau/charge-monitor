@@ -1,16 +1,21 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Layout } from '../design-system/templates'
 import { Routes as AppRoutes } from '../routing/Routes'
+import { StationList } from './station/StationList'
+import { VehicleList } from './vehicle/VehicleList'
 
 function App (): React.ReactElement {
   return (
-    <div className="App">
-      <nav>
-        <Link to={AppRoutes.station}>Bornes</Link>
-        <Link to={AppRoutes.vehicle}>Véhicules</Link>
-      </nav>
-      <Outlet />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+            <Route path={AppRoutes.station} element={<StationList />}/>
+            <Route path={AppRoutes.vehicle} element={<VehicleList />}/>
+            <Route path="*" element={<h1>404 NOT FOUND</h1>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
