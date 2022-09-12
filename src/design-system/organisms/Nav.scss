@@ -1,0 +1,20 @@
+@import '../ressources/variables.scss';
+
+.Nav {
+    position: static;
+    background-color: white;
+    box-shadow:  0 2px 4px 0 rgba($primary-color,.7);
+
+
+    &_Title {
+        color: $secondary-color;
+        min-width: 12*$default-size-unit;
+    }
+
+    &_Links {
+        display: flex;
+        button {
+            color: $secondary-color;
+        }
+    }
+}
