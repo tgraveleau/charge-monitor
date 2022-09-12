@@ -1,0 +1,9 @@
+@import '../ressources/variables.scss';
+
+.MainContainer {
+    position: fixed;
+    top: $navbar-height;
+    left: $sidenav-width;
+    right: 0;
+    bottom: 0;
+}

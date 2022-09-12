@@ -1,0 +1,21 @@
+@import '../ressources/variables.scss';
+
+.Sidenav {
+    position: fixed;
+    top: $navbar-height;
+    bottom: 0;
+    width: $sidenav-width;
+    height: auto;
+    z-index: $sidenav-z-index;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        right: 0px;
+        top: 0px;
+        width: 4px;
+        height: 100%;
+        background: radial-gradient(rgba(9, 30, 66, 0.13) 0px, rgba(9, 30, 66, 0.13) 1px, rgba(9, 30, 66, 0.08) 1px, rgba(9, 30, 66, 0) 4px);
+    }
+
+}

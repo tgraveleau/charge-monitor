@@ -10,9 +10,9 @@ function App (): React.ReactElement {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-            <Route path={AppRoutes.station.path} element={<StationList />}/>
-            <Route path={AppRoutes.vehicle.path} element={<VehicleList />}/>
-            <Route path="*" element={<h1>404 NOT FOUND</h1>}/>
+          <Route path={AppRoutes.station.path} element={<StationList />}/>
+          <Route path={AppRoutes.vehicle.path} element={<VehicleList />}/>
+          <Route path="*" element={<h1>404 NOT FOUND</h1>}/>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -3,6 +3,10 @@ interface Route {
   label: string
 }
 export const Routes: {[name: string]: Route} = {
+  home: {
+    path: '/',
+    label: 'Home'
+  },
   station: {
     path: '/stations',
     label: 'Bornes'

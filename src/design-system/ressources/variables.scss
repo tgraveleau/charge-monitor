@@ -3,4 +3,11 @@ $primary-color: #fe343b;
 $secondary-color: #6e7d8c;
 
 // SIZING
-$default-size-unit: 8px;
+$default-size-unit-px: 8px;
+
+// LAYOUT
+$navbar-height: 6*$default-size-unit-px;
+$navbar-z-index: 1000;
+
+$sidenav-width: 25*$default-size-unit-px;
+$sidenav-z-index: $navbar-z-index -1;
